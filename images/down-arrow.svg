@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="arrow" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 274.9 179.69">
+  <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #d89e3f;
+      }
+    </style>
+  </defs>
+  <polygon id="bottom" class="st0" points="0 66 0 99.17 137.45 179.69 274.9 99.5 274.9 66 137.45 146.2 0 66"/>
+  <polygon id="top" class="st0" points="0 0 0 33.44 137.51 112.87 274.9 33.61 274.9 0 137.45 80.03 0 0"/>
+</svg>

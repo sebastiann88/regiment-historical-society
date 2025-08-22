@@ -169,6 +169,38 @@ svg {
 	fill: #fff;
 }
 
+/* Scroll Down */
+
+.scroll-down {
+  position: fixed;  /* or relative to your container */
+  left: 50%;
+	bottom: 3em;
+  transform: rotate(-45deg);
+  width: 3em;
+  height: 3em;
+	z-index: 1000;
+}
+
+.scroll-down img {
+  display: block;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 0.7;
+  }
+  50% {
+    transform: rotate(45deg) translate(0, 10px);
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+    opacity: 0.7;
+  }
+}
+
 @media (min-width: 528px) {
 
 	div.headline-container {

@@ -1,6 +1,7 @@
 const canvasScroll = document.querySelector("canvas.canvas");
 const innerContentScroll = document.querySelector("div.inner-content");
 const watercolourVideo = document.querySelector('.watercolour-video');
+const scrollDown = document.querySelector('.scroll-down'); // Add this line
 
 const triggerPoint = window.innerHeight * 3.2; // 320vh in px
 
@@ -19,6 +20,21 @@ window.addEventListener("scroll", () => {
     }
 
     watercolourVideo.style.opacity = opacity;
+  }
+
+  // Hide .scroll-down as you scroll down the first viewport height
+  if (scrollDown) {
+    const fadeStart = 0;
+    const fadeEnd = window.innerHeight;
+    const scrollY = window.scrollY;
+    let opacity = 1;
+
+    if (scrollY > fadeStart) {
+      opacity = 1 - Math.min((scrollY - fadeStart) / (fadeEnd - fadeStart), 1);
+    }
+
+    scrollDown.style.opacity = opacity;
+    scrollDown.style.pointerEvents = opacity === 0 ? "none" : "auto";
   }
 });
 
