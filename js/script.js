@@ -1,7 +1,7 @@
 const canvasScroll = document.querySelector("canvas.canvas");
 const innerContentScroll = document.querySelector("div.inner-content");
 
-const triggerPoint = window.innerHeight * 3.8; // 380vh in px
+const triggerPoint = window.innerHeight * 4.2; // 380vh in px
 
 window.addEventListener("scroll", () => {
   if (window.scrollY > triggerPoint) {

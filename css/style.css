@@ -10,7 +10,7 @@ body {
 }
 
 main {
-	min-height: 380vh;
+	min-height: 420vh;
 }
 
 p {
@@ -30,7 +30,7 @@ p {
 	display: block;
 	height: auto;
 	width: 100%;
-	margin: 95vh auto 0;
+	margin: 100vh auto 0;
 	padding-bottom: 6em;
 }
 
@@ -48,8 +48,7 @@ canvas.canvas {
 canvas.canvas.scroll {
 	position: static;
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 3em auto 0;
 	transform: none;
 }
 
@@ -58,7 +57,7 @@ canvas.canvas.scroll {
 }
 
 .spacer {
-	height: 380vh;
+	height: 420vh;
 }
 
 .headline-container {
