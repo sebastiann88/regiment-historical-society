@@ -1,7 +1,3 @@
-html {
-  height: 100vh;
-}
-
 body {
 	margin: 0;
 	background-color: #f6f0e0;
@@ -9,8 +5,9 @@ body {
 	z-index: -999;
 }
 
-main {
-	min-height: 360vh;
+main,
+.spacer {
+	min-height: 320vh;
 }
 
 p {
@@ -54,10 +51,6 @@ canvas.canvas.scroll {
 
 .inner-content.scroll {
 	padding-top: 0;
-}
-
-.spacer {
-	height: 360vh;
 }
 
 .headline-container {
