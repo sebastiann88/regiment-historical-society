@@ -12,6 +12,16 @@ main,
 	min-height: 320vh;
 }
 
+.watercolour-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+	z-index: 300;
+}
+
 /* Typography */
 
 h1 {
@@ -20,6 +30,7 @@ h1 {
   font-weight: 500;
   font-style: normal;
 	margin-bottom: 0.75em;
+	color: #842338;
 }
 
 p {

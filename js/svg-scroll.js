@@ -1,4 +1,4 @@
-let path = document.querySelector("#florals-path");
+let path = document.querySelector(".theLine");
 let pathLength = path.getTotalLength();
 
 path.style.strokeDasharray = pathLength + " " + pathLength;
