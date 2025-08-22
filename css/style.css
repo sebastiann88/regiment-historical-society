@@ -12,16 +12,6 @@ main,
 	min-height: 320vh;
 }
 
-.watercolour-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-	z-index: 300;
-}
-
 /* Typography */
 
 h1 {
@@ -57,24 +47,6 @@ p {
 	width: 100%;
 	margin: 100vh auto 0;
 	padding-bottom: 6em;
-}
-
-canvas.canvas {
-	position: fixed;
-	display: block;
-	top: 50%;
-  left: 50%;
-	height: 87.31vh;
-	margin: 0 auto;
-  transform: translate(-50%, -50%);
-	z-index: 100;
-}
-
-canvas.canvas.scroll {
-	position: static;
-	display: block;
-	margin: 3em auto 0;
-	transform: none;
 }
 
 .inner-content.scroll {
@@ -171,6 +143,16 @@ svg {
 
 /* Scroll Down */
 
+.watercolour-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+	z-index: 150;
+}
+
 .scroll-down {
   position: fixed;  /* or relative to your container */
   left: 50%;
@@ -178,12 +160,30 @@ svg {
   transform: rotate(-45deg);
   width: 3em;
   height: 3em;
-	z-index: 1000;
+	z-index: 200;
 }
 
 .scroll-down img {
   display: block;
   animation: pulse 1s infinite;
+}
+
+canvas.canvas {
+	position: fixed;
+	display: block;
+	top: 50%;
+  left: 50%;
+	height: 87.31vh;
+	margin: 0 auto;
+  transform: translate(-50%, -50%);
+	z-index: 100;
+}
+
+canvas.canvas.scroll {
+	position: static;
+	display: block;
+	margin: 3em auto 0;
+	transform: none;
 }
 
 @keyframes pulse {
