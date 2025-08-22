@@ -64,4 +64,6 @@ function debounce(func, delay) {
 
 const handleResize = debounce(() => {
   location.reload();
-}, 300); // Adjust delay as needed (300ms in this
+}, 300); // Adjust delay as needed (300ms in this case)
+
+window.addEventListener('resize', handleResize);
