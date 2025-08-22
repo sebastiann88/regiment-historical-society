@@ -10,7 +10,7 @@ body {
 }
 
 main {
-	min-height: 420vh;
+	min-height: 360vh;
 }
 
 p {
@@ -57,7 +57,7 @@ canvas.canvas.scroll {
 }
 
 .spacer {
-	height: 420vh;
+	height: 360vh;
 }
 
 .headline-container {
