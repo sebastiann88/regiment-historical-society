@@ -1,3 +1,5 @@
+/* General */
+
 body {
 	margin: 0;
 	background-color: #f6f0e0;
@@ -9,6 +11,8 @@ main,
 .spacer {
 	min-height: 320vh;
 }
+
+/* Typography */
 
 h1 {
   font-family: "Playfair Display", serif;
@@ -25,6 +29,8 @@ p {
   font-style: normal;
 	line-height: 1.1625;
 }
+
+/* Layout */
 
 .content {
 	position: relative;
@@ -79,6 +85,8 @@ canvas.canvas.scroll {
 	max-width: 42em;
 }
 
+/* Line Art SVG */
+
 .line-container {
 	position: fixed;
   top: 50%;
@@ -100,44 +108,44 @@ svg {
 	width: 100%;
 }
 
-.st0 {
+.st00 {
 	fill: none;
 	stroke: #fff;
 	stroke-miterlimit: 10;
 	stroke-width: .75px;
 }
 
-div.text-container {
-	width: 100%;
-	height: 100vh;
+/* SVG Timeline */
+
+.st0 {
+	font-family: LibreFranklin-Light, "Libre Franklin";
+	font-size: 34px;
+	font-weight: 300;
 }
 
-section {
-	display: none;
-	visibility: hidden;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	text-align: left;
-	width: 20em;
+.st0,
+.st1,
+.st2 {
+	fill: #842338;
 }
 
-.section-1 {
-	position: absolute;
-	top: 100px;
-	left: 80px;
+.st3 {
+	fill: #ce882c;
 }
 
-.section-2 {
-	position: absolute;
-	top: 400px;
-	left: 80px;
+.st1 {
+	font-family: PlayfairDisplay-Regular, "Playfair Display";
+	font-size: 38px;
 }
 
-.section-3 {
-	position: absolute;
-	top: 750px;
-	left: 80px;
+.st2 {
+	font-family: PlayfairDisplay-Bold, "Playfair Display";
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.st4 {
+	fill: #a21e34;
 }
 
 @media (min-width: 528px) {
