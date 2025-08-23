@@ -102,27 +102,27 @@ svg {
 
 .timeline {
 	margin-top: 3em;
-	margin-bottom: 3em;
+	margin-bottom: 25em;
 }
 
-.st0 {
-	font-family: PlayfairDisplay-Regular, "Playfair Display";
-	font-size: 43.39px;
-}
-
-.st0,
-.st1,
-.st2 {
-	fill: #842338;
-}
-
-.st1 {
+.date {
 	font-family: PlayfairDisplay-Bold, "Playfair Display";
-	font-size: 44.76px;
+	font-size: 45px;
 	font-weight: 700;
 }
 
-.st2 {
+.event {
+	font-family: PlayfairDisplay-Regular, "Playfair Display";
+	font-size: 43px;
+}
+
+.date,
+.event,
+.description {
+	fill: #842338;
+}
+
+.description {
 	font-family: LibreFranklin-Light, "Libre Franklin";
 	font-size: 38.05px;
 	font-weight: 300;
@@ -133,11 +133,11 @@ svg {
 }
 
 .ball,
-.st4 {
+.line {
 	fill: #a21e34;
 }
 
-.main-ball {
+.mainball {
 	fill: #fff;
 }
 
