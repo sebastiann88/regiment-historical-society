@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   gsap.defaults({ ease: "none" });
 
-  const pulses = gsap.timeline({
+  const pulsesBalls = gsap.timeline({
     defaults: {
       scale: 1.5,
       autoAlpha: 1,
@@ -11,13 +11,59 @@ document.addEventListener("DOMContentLoaded", () => {
       ease: "elastic(2.5, 1)"
     }
   })
-    .to(".ball01, .text01", {}, 0.10)
-    .to(".ball02, .text02", {}, 0.17)
-    .to(".ball03, .text03", {}, 0.25)
-    .to(".ball04, .text04", {}, 0.32)
-    .to(".ball05, .text05", {}, 0.58)
-    .to(".ball06, .text06", {}, 0.66)
-    .to(".ball07, .text07", {}, 0.75);
+  .to(".ball01", {}, 0.10)
+  .to(".ball02", {}, 0.17)
+  .to(".ball03", {}, 0.25)
+  .to(".ball04", {}, 0.32)
+  .to(".ball05", {}, 0.58)
+  .to(".ball06", {}, 0.66)
+  .to(".ball07", {}, 0.75);
+
+  const pulsesDates = gsap.timeline({
+    defaults: {
+      scale: 1.125,
+      autoAlpha: 1,
+      transformOrigin: "center",
+      ease: "elastic(2.5, 1)"
+    }
+  })
+  .to(".date01", {}, 0.10)
+  .to(".date02", {}, 0.17)
+  .to(".date03", {}, 0.25)
+  .to(".date04", {}, 0.32)
+  .to(".date05", {}, 0.58)
+  .to(".date06", {}, 0.66)
+  .to(".date07", {}, 0.75);
+
+  const pulsesEvents = gsap.timeline({
+    defaults: {
+      autoAlpha: 1,
+      transformOrigin: "center",
+      ease: "elastic(2.5, 1)"
+    }
+  })
+  .to(".event01", {}, 0.10)
+  .to(".event02", {}, 0.17)
+  .to(".event03", {}, 0.25)
+  .to(".event04", {}, 0.32)
+  .to(".event05", {}, 0.58)
+  .to(".event06", {}, 0.66)
+  .to(".event07", {}, 0.75);
+
+  const pulsesDescriptions = gsap.timeline({
+    defaults: {
+      autoAlpha: 1,
+      transformOrigin: "center",
+      ease: "elastic(2.5, 1)"
+    }
+  })
+  .to(".description01", {}, 0.10)
+  .to(".description02", {}, 0.17)
+  .to(".description03", {}, 0.25)
+  .to(".description04", {}, 0.32)
+  .to(".description05", {}, 0.58)
+  .to(".description06", {}, 0.66)
+  .to(".description07", {}, 0.75);
 
   const line = document.querySelector(".theLine");
   gsap.set(".mainball", { autoAlpha: 1 });
@@ -49,7 +95,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 0);
 
-  main.add(pulses, 0);
+  main.add(pulsesBalls, 0);
+  main.add(pulsesDates, 0);
+  main.add(pulsesEvents, 0);
+  main.add(pulsesDescriptions, 0);
 
   // GSDevTools.create({ animation: main, minimal: false });
 });

@@ -114,11 +114,13 @@ svg {
 	font-family: PlayfairDisplay-Bold, "Playfair Display";
 	font-size: 45px;
 	font-weight: 700;
+	opacity: 0;
 }
 
 .event {
 	font-family: PlayfairDisplay-Regular, "Playfair Display";
 	font-size: 43px;
+	opacity: 0;
 }
 
 .date,
@@ -131,6 +133,7 @@ svg {
 	font-family: LibreFranklin-Light, "Libre Franklin";
 	font-size: 38.05px;
 	font-weight: 300;
+	opacity: 0;
 }
 
 /* .theLine {
@@ -139,6 +142,7 @@ svg {
 
 .ball {
 	fill: #a21e34;
+	opacity: 0;
 }
 
 .mainball {
