@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const pulsesBalls = gsap.timeline({
     defaults: {
-      scale: 1.5,
+      scale: 1.35,
       autoAlpha: 1,
       transformOrigin: "center",
       ease: "elastic(2.5, 1)"
