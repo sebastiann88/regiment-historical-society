@@ -60,7 +60,7 @@
       <div class="content">
         <canvas id="hero-lightpass" class="webgl canvas box"></canvas>
         <div class="inner-content">
-          <div class="container flex">
+          <div class="section-1 container flex">
             <div class="row align-items-center">
               <figure class="col-sm-12 col-lg-6">
                 <img class="img-fluid" src="images/infantry.png" />
@@ -102,13 +102,14 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row timeline">
+          <div class="section-2 container timeline-container">
+            <div id="timeline" class="row timeline">
               <?xml version="1.0" encoding="UTF-8"?>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 version="1.1"
                 viewBox="0 0 2641.63 1623.3"
+                id="svg"
               >
                 <!-- Generator: Adobe Illustrator 29.7.1, SVG Export Plug-In . SVG Version: 2.1.1 Build 8)  -->
                 <g id="Dates">
@@ -333,20 +334,26 @@
                     />
                   </g>
                 </g>
-                <g id="line-path">
-                  <g id="line-path1 theLine" data-name="line-path">
-                    <path
-                      class="theLine"
-                      d="M2472.67,1561.21c-283.45,33.37-642.27,73.94-852.07-162.23-16.73-18.79-31.97-38.87-46.06-59.7-105.36-152.84-213.93-336.4-398.14-400.66-63.04-21.53-131.09-25.54-196.87-16.67-49.46,7.28-99.29,16.27-149.2,20.57-33.51,2.9-67.48,3.95-100.88-1.42-36.71-5.6-71.56-20.72-102.24-41.38-4.38-3.03-8.83-6.36-12.74-9.99-31.96-29.32-45.05-74.24-43.7-116.61,1.58-51.07,21.78-99.83,49.52-142.08,22.74-35.66,52.59-65.4,81.72-95.54,28.14-30.45,54-63.52,73.05-100.45,77.53-150.83-33.52-244.48-157.39-312.07-32.79-18.39-65.5-37.07-100.06-51.96-9.61-3.96-19.4-7.97-29.6-10.08-1.54-.28-3.09-.56-4.66-.59-.52-.02-1.05-.01-1.56.07.51-.1,1.04-.11,1.56-.1,6.71.35,13.43,2.58,19.8,4.62,8.91,3.09,17.62,6.6,26.25,10.4,30.64,13.48,59.94,29.78,89.31,45.76,58.36,31.92,118.16,67.81,156.59,123.77,76.29,111.36-5.11,231.52-86.02,313.16-57.58,57.69-108.55,131.3-111.6,215.29-1.2,40.46,11.09,83.29,41.46,111.31,5.97,5.54,12.83,10.11,19.71,14.41,42.19,27.44,91.02,39.7,141.11,39.18,66.67-.07,132.9-12.77,198.78-22.18,83.26-11.36,170.36-.89,246,36.8,158.44,79.15,255.95,242.75,352.47,384.65,13.95,20.77,29.04,40.76,45.62,59.51,208.22,235.97,567.15,196.22,849.83,164.22h0Z"
-                    />
-                  </g>
-                </g>
+                <path
+                  id="theLine"
+                  class="theLine"
+                  d="M481.79,60.43
+                    s21.1,4.62,117.81,51.33
+                    c104.67,50.56,350.99,179.71,84.57,446.91
+                    -151.5,151.94-122.76,293.14-54.99,338.22
+                    86.61,57.61,160.2,52.31,333.7,24.45
+                    308.03-49.46,455.01,181.47,613.79,418.22
+                    183.3,273.32,514.68,269.1,896,221.65"
+                  stroke="#ce882c"
+                  stroke-width="4"
+                  fill="none"
+                />
                 <g id="Circles">
                   <circle
                     id="main_circle"
                     class="ball mainball"
-                    cx="369.08"
-                    cy="167.28"
+                    cx="485.43"
+                    cy="52.27"
                     r="20.4"
                   />
                   <circle
@@ -405,30 +412,23 @@
         </div>
       </div>
     </main>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"></script>
-    <script src="js/wow.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="js/gsap.min.js"></script>
+    <script type="text/javascript" src="js/MotionPathPlugin.min.js"></script>
+    <script type="text/javascript" src="js/DrawSVGPlugin.min.js"></script>
+    <script type="text/javascript" src="js/scrollTrigger.min.js"></script>
+    <script type="text/javascript" src="js/GSDevTools.min.js"></script>
+    <script type="text/javascript" src="js/gsapScript.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/svg-scroll.js"></script>
     <script type="text/javascript" src="js/watercolour.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/DrawSVGPlugin.min.js"
-    ></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"
-    ></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/GSDevTools.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/MotionPathPlugin.min.js"></script>
-    <script
-      type="text/javascript"
-      src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"
-    ></script>
-    <script type="text/javascript" src="js/scrollTrigger.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script>
       new WOW().init();

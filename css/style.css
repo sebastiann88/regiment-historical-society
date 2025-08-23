@@ -12,6 +12,16 @@ main,
 	min-height: 320vh;
 }
 
+/* Sections */
+
+.section-1 {
+	margin-bottom: 1.75em;
+}
+
+.section-2 {
+	margin-bottom: 14em;
+}
+
 /* Typography */
 
 h1 {
@@ -100,11 +110,6 @@ svg {
 
 /* SVG Timeline */
 
-.timeline {
-	margin-top: 3em;
-	margin-bottom: 25em;
-}
-
 .date {
 	font-family: PlayfairDisplay-Bold, "Playfair Display";
 	font-size: 45px;
@@ -128,17 +133,16 @@ svg {
 	font-weight: 300;
 }
 
-.theLine {
+/* .theLine {
 	fill: #ce882c;
-}
+} */
 
-.ball,
-.line {
+.ball {
 	fill: #a21e34;
 }
 
 .mainball {
-	fill: #fff;
+	fill: #000;
 }
 
 /* Scroll Down */
