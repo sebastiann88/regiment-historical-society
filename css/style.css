@@ -136,9 +136,9 @@ svg {
 	opacity: 0;
 }
 
-/* .theLine {
-	fill: #ce882c;
-} */
+.line {
+	color: #481e00
+}
 
 .ball {
 	fill: #a21e34;
