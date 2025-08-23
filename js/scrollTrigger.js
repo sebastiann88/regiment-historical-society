@@ -12,9 +12,13 @@
       transformOrigin: 'center', 
       ease: "elastic(2.5, 1)"
     }})
-  .to(".ball02, .text01", {}, 0.84) 
-  .to(".ball03, .text02", {}, 1.36)
-  .to(".ball04, .text03", {}, 1.92)
+  // .to(".ball01, .text01", {}, 0.84) 
+  // .to(".ball02, .text02", {}, 1.36)
+  // .to(".ball03, .text03", {}, 1.92)
+  // .to(".ball04, .text04", {}, 0.84) 
+  // .to(".ball05, .text05", {}, 1.36)
+  // .to(".ball06, .text06", {}, 1.92)
+  // .to(".ball07, .text07", {}, 1.52)
 
   const main = gsap.timeline({
     scrollTrigger: {
