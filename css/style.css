@@ -39,6 +39,7 @@ p {
   font-weight: 300;
   font-style: normal;
 	line-height: 1.1625;
+	color: #2b1200;
 }
 
 /* Layout */
@@ -137,7 +138,7 @@ svg {
 }
 
 .line {
-	color: #481e00
+	color: #481e00;
 }
 
 .ball {
