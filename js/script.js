@@ -55,7 +55,7 @@ window.addEventListener("scroll", () => {
 
 // Function to detect desktop
 function isDesktop() {
-  return window.innerWidth >= 1200; // adjust breakpoint as needed
+  return window.innerWidth >= 1400; // adjust breakpoint as needed
 }
 
 // Debounce function
