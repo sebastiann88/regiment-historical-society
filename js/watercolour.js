@@ -41,6 +41,30 @@ window.addEventListener('scroll', () => {
 
 preloadImages()
 
+const spacer = document.querySelector('.spacer');
+const canvasContainer = document.querySelector('.canvas-container');
+
+function adjustSpacer() {
+  // Get canvas height (same as video)
+  const canvasHeight = window.innerHeight;
+
+  // Set spacer height so that when canvas becomes static it stays aligned
+  spacer.style.height = canvasHeight + 'px';
+}
+
+// Call initially and on resize
+window.addEventListener('resize', adjustSpacer);
+adjustSpacer();
+
+// Optional: scroll listener to toggle fixed -> static
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= spacer.offsetHeight) {
+    canvasContainer.classList.add('scroll');
+  } else {
+    canvasContainer.classList.remove('scroll');
+  }
+});
+
 // const sizes = {
 //     width: window.innerWidth,
 //     height: window.innerHeight

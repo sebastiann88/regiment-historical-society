@@ -51,12 +51,13 @@ p {
 }
 
 .inner-content {
-	position: absolute;
-	display: block;
-	height: auto;
-	width: 100%;
-	margin: 100vh auto 0;
-	padding-bottom: 6em;
+  position: absolute;
+  display: block;
+  height: auto;
+  width: 100%;
+  margin: 100vh auto 0;
+  margin: 100dvh auto 0;
+  padding-bottom: 6em;
 }
 
 .inner-content.scroll {
@@ -208,6 +209,24 @@ canvas.canvas.scroll {
   100% {
     transform: rotate(45deg) translate(0, 0);
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 528px) {
+  .inner-content {
+    margin-top: 100svh; /* ensures it's fully below canvas on small mobile */
+  }
+}
+
+@media (min-width: 529px) and (max-width: 992px) {
+  .inner-content {
+    margin-top: 100dvh;
+  }
+}
+
+@media (min-width: 993px) {
+  .inner-content {
+    margin-top: 100vh; /* desktop is stable */
   }
 }
 
