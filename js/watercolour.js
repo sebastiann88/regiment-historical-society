@@ -1,5 +1,5 @@
 const html = document.documentElement;
-const canvas = document.getElementById("hero-lightpass");
+const canvas = document.getElementById("watercolourCanvas");
 const context = canvas.getContext("2d");
 
 const frameCount = 180; // Total number of frames
@@ -40,3 +40,21 @@ window.addEventListener('scroll', () => {
 });
 
 preloadImages()
+
+// const ctx = canvas.getContext("2d");
+
+// function resizeCanvas() {
+//   const container = canvas.parentElement;
+//   const dpr = window.devicePixelRatio || 1;
+
+//   const width = container.clientWidth;
+//   const height = container.clientHeight;
+
+//   canvas.width = width * dpr;
+//   canvas.height = height * dpr;
+
+//   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+// }
+
+// window.addEventListener("resize", resizeCanvas);
+// resizeCanvas();

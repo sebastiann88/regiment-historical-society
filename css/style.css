@@ -9,7 +9,7 @@ body {
 
 main,
 .spacer {
-	min-height: 280vh;
+	min-height: 320vh;
 }
 
 /* Sections */
@@ -39,7 +39,6 @@ p {
   font-weight: 300;
   font-style: normal;
 	line-height: 1.1625;
-	color: #2b1200;
 }
 
 /* Layout */
@@ -138,7 +137,7 @@ svg {
 }
 
 .line {
-	color: #481e00;
+	color: #481e00
 }
 
 .ball {
@@ -212,75 +211,20 @@ canvas.canvas.scroll {
 
 @media (min-width: 528px) {
 
-	div.headline-container {
-		padding: 0 15px 0 15px;
-	}
-
 }
 
 @media (min-width: 768px) {
-
-	section {
-		display: flex;
-		visibility: visible;
-	}
-
-	.headline {
-		margin: 9em auto 0 auto;
-	}
 
 }
 
 @media (min-width: 992px) {
 
-	section {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		text-align: left;
-		width: 20em;
-		margin: 0 25% 0 auto;
-	}
-
 }
 
 @media (min-width: 1200px) {
 
-	/* main {
-		transform: translateX(10px);
-		margin: 0 25% 0 auto;
-	} */
-
-	section {
-		height: 70vh;
-		margin: 1.75em 0 0 75%;
-		justify-content: center;
-	}
-
-	.section-1,
-	.section-2,
-	.section-3 {
-		position: static;
-	}
-
-	.headline {
-		margin: 0 auto;
-	}
 }
 
 @media (min-width: 1922px) {
 
-	/* body {
-		height: 280vh;
-		padding-top: 4em;
-	} */
-
-	section {
-		height: 100vh;
-	}
-
-	.line-container {
-		/* display: block;
-		visibility: visible; */
-	}
 }
