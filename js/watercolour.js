@@ -41,20 +41,26 @@ window.addEventListener('scroll', () => {
 
 preloadImages()
 
-// const ctx = canvas.getContext("2d");
-
-// function resizeCanvas() {
-//   const container = canvas.parentElement;
-//   const dpr = window.devicePixelRatio || 1;
-
-//   const width = container.clientWidth;
-//   const height = container.clientHeight;
-
-//   canvas.width = width * dpr;
-//   canvas.height = height * dpr;
-
-//   ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+// const sizes = {
+//     width: window.innerWidth,
+//     height: window.innerHeight
 // }
 
-// window.addEventListener("resize", resizeCanvas);
-// resizeCanvas();
+// const renderer = new THREE.WebGLRenderer({
+//     canvas: canvas
+// })
+
+// window.addEventListener('resize', () =>
+// {
+//     // Update sizes
+//     sizes.width = window.innerWidth
+//     sizes.height = window.innerHeight
+
+//     // Update renderer
+//     renderer.setSize(sizes.width, sizes.height)
+//     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
+// })
+
+// // renderer.setClearColor('#262837')
+// renderer.setSize(sizes.width, sizes.height)
+// renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2))
