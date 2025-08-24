@@ -112,14 +112,14 @@ svg {
 
 .date {
 	font-family: PlayfairDisplay-Bold, "Playfair Display";
-	font-size: 45px;
+	/* font-size: 45px; */
 	font-weight: 700;
 	opacity: 0;
 }
 
 .event {
 	font-family: PlayfairDisplay-Regular, "Playfair Display";
-	font-size: 45px;
+	/* font-size: 45px; */
 	opacity: 0;
 }
 
@@ -131,7 +131,7 @@ svg {
 
 .description {
 	font-family: LibreFranklin-Light, "Libre Franklin";
-	font-size: 39px;
+	/* font-size: 39px; */
 	font-weight: 300;
 	opacity: 0;
 }
