@@ -53,7 +53,12 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// An event listener that refreshes the page when the window resizes
+// Function to detect desktop
+function isDesktop() {
+  return window.innerWidth >= 1200; // adjust breakpoint as needed
+}
+
+// Debounce function
 function debounce(func, delay) {
   let timeout;
   return function(...args) {
@@ -62,8 +67,12 @@ function debounce(func, delay) {
   };
 }
 
+// Function to handle resize
 const handleResize = debounce(() => {
   location.reload();
-}, 300); // Adjust delay as needed (300ms in this case)
+}, 300);
 
-window.addEventListener('resize', handleResize);
+// Only attach the listener if it's desktop
+if (isDesktop()) {
+  window.addEventListener('resize', handleResize);
+}
