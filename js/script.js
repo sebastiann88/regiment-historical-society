@@ -3,7 +3,7 @@ const innerContentScroll = document.querySelector("div.inner-content");
 const watercolourVideo = document.querySelector('.watercolour-video');
 const scrollDown = document.querySelector('.scroll-down');
 
-const triggerPoint = window.innerHeight * 3.2; // 320vh in px
+const triggerPoint = window.innerHeight * 3; // 320vh in px
 
 window.addEventListener("scroll", () => {
   // Fade out video as you scroll down the first viewport height
